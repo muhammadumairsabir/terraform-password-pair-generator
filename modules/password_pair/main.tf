@@ -26,7 +26,6 @@ resource "random_password" "active" {
   min_lower        = var.min_lower
   min_numeric      = var.min_numeric
   min_special      = var.min_special
-  #exclude_chars    = var.exclude_chars
 
   keepers = {
     init = var.active_init_nonce
@@ -45,7 +44,6 @@ resource "random_password" "backup" {
   min_lower        = var.min_lower
   min_numeric      = var.min_numeric
   min_special      = var.min_special
-  #exclude_chars    = var.exclude_chars
 
   keepers = {
     rotation = var.backup_rotation_nonce

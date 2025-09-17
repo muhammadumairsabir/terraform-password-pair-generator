@@ -58,12 +58,6 @@ variable "min_special" {
   default     = 1
 }
 
-variable "exclude_chars" {
-  description = "Characters to exclude from the password."
-  type        = string
-  default     = ""
-}
-
 variable "swap" {
   description = "If true, the BACKUP value is exposed as 'active' and the ACTIVE value is exposed as 'backup'. This does NOT regenerate passwords."
   type        = bool
